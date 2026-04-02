@@ -193,6 +193,7 @@ export default function CaseStudySelector() {
   const [figmaLoaded, setFigmaLoaded] = useState(false)
   const contentRef = useRef(null)
   const sliderRef = useRef(null)
+  const sectionRef = useRef(null)
 
   const scrollSlider = (dir) => {
     if (!sliderRef.current) return
@@ -222,7 +223,7 @@ export default function CaseStudySelector() {
   const cs = project.caseStudy
 
   return (
-    <section className={styles.selector}>
+    <section className={styles.selector} ref={sectionRef}>
 
       {/* Left panel */}
       <div className={`${styles.panel} ${expanded ? styles.panelHidden : ''}`}>
@@ -454,7 +455,7 @@ export default function CaseStudySelector() {
                       setSelected(selected - 1)
                       setGroupIndex(0)
                       contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
-                      window.scrollTo({ top: 0, behavior: 'smooth' })
+                      sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
                     }}
                   >
                     <span className={styles.caseNavArrow}>←</span>
@@ -469,7 +470,7 @@ export default function CaseStudySelector() {
                       setSelected(selected + 1)
                       setGroupIndex(0)
                       contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
-                      window.scrollTo({ top: 0, behavior: 'smooth' })
+                      sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
                     }}
                   >
                     <span className={styles.caseNavLabel}>{projects[selected + 1].title}</span>
