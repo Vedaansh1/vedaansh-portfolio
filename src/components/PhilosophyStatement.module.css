@@ -60,7 +60,22 @@
   color: var(--text-secondary);
   line-height: 1.8;
   max-width: 340px;
+  min-width: 220px;
   align-self: center;
+  flex-shrink: 0;
+}
+
+/* Mid-size laptops: scale heading down so both columns still fit side-by-side */
+@media (max-width: 1300px) {
+  .inner {
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  .line1,
+  .line2 {
+    font-size: clamp(28px, 3.8vw, 52px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -72,6 +87,8 @@
 
   .body {
     max-width: 100%;
+    min-width: unset;
+    flex-shrink: unset;
   }
 
   .line1,
