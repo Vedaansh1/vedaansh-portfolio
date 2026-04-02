@@ -5,11 +5,13 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import HeroBackground from './components/HeroBackground'
+import MobileBlocker from './components/MobileBlocker'
 
 function AppInner() {
   const location = useLocation()
   return (
     <>
+      <MobileBlocker />
       {location.pathname === '/' && <HeroBackground />}
       <Navbar />
       <Routes>
