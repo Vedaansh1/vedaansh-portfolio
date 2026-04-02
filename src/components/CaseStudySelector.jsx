@@ -454,6 +454,7 @@ export default function CaseStudySelector() {
                       setSelected(selected - 1)
                       setGroupIndex(0)
                       contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
+                      window.scrollTo({ top: 0, behavior: 'smooth' })
                     }}
                   >
                     <span className={styles.caseNavArrow}>←</span>
@@ -468,6 +469,7 @@ export default function CaseStudySelector() {
                       setSelected(selected + 1)
                       setGroupIndex(0)
                       contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
+                      window.scrollTo({ top: 0, behavior: 'smooth' })
                     }}
                   >
                     <span className={styles.caseNavLabel}>{projects[selected + 1].title}</span>
