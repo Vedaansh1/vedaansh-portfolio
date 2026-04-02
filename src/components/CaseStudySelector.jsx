@@ -454,7 +454,6 @@ export default function CaseStudySelector() {
                     onClick={() => {
                       setSelected(selected - 1)
                       setGroupIndex(0)
-                      contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
                       sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
                     }}
                   >
@@ -469,7 +468,6 @@ export default function CaseStudySelector() {
                     onClick={() => {
                       setSelected(selected + 1)
                       setGroupIndex(0)
-                      contentRef.current?.scrollTo({ top: 0, behavior: 'smooth' })
                       sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
                     }}
                   >
