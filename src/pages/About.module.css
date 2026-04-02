@@ -1,0 +1,165 @@
+.main {
+  padding-top: var(--nav-height);
+  max-width: 760px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.hero {
+  padding: 80px 0 64px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 64px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 24px;
+}
+
+.name {
+  font-size: clamp(40px, 6vw, 64px);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.tagline {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.story {
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.story p {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.85;
+}
+
+.story p:first-child {
+  font-size: 19px;
+  color: var(--text-primary);
+}
+
+.experienceSection {
+  margin-bottom: 72px;
+}
+
+.experienceList {
+  margin-top: 32px;
+}
+
+.experienceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.experienceItem:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.expLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.expCompany {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.expNote {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.expRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.expRole {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.expLocation {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.toolsSection {
+  margin-bottom: 72px;
+}
+
+.toolsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+.tool {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.tool:hover {
+  color: var(--accent);
+  border-color: rgba(168, 196, 212, 0.4);
+}
+
+.closing {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-muted);
+  padding: 48px 0 80px;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .experienceItem {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .expRight {
+    align-items: flex-start;
+  }
+}
