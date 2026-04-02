@@ -53,3 +53,16 @@
   color: var(--text-secondary);
   border-color: var(--text-secondary);
 }
+
+@media (max-width: 768px) {
+  .main {
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: flex-start;
+  }
+
+  .email {
+    font-size: 15px;
+    word-break: break-all;
+  }
+}

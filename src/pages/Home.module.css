@@ -21,4 +21,9 @@
     height: auto;
     scroll-snap-align: none;
   }
+
+  .snapSectionAuto {
+    height: auto;
+    overflow: visible;
+  }
 }

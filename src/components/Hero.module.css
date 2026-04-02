@@ -145,3 +145,26 @@
   0%, 100% { opacity: 0.3; transform: scaleY(1); }
   50% { opacity: 1; transform: scaleY(0.6); }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 24px;
+  }
+
+  .greetingWrapper {
+    height: 56px;
+  }
+
+  .greeting {
+    font-size: 48px;
+  }
+
+  .location {
+    right: 24px;
+    bottom: 48px;
+  }
+
+  .scrollIndicator {
+    left: 24px;
+  }
+}
