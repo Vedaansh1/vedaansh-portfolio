@@ -1,6 +1,13 @@
+import { useEffect } from 'react'
 import styles from './MobileBlocker.module.css'
 
 export default function MobileBlocker() {
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 768
+    if (isMobile) document.body.style.overflow = 'hidden'
+    return () => { document.body.style.overflow = '' }
+  }, [])
+
   return (
     <div className={styles.blocker}>
       <div className={styles.inner}>
