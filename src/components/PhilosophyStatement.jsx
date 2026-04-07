@@ -57,16 +57,7 @@ export default function PhilosophyStatement() {
             </svg>
           </div>
 
-          <motion.p
-            className={styles.body}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
-          >
-            The brief tells you where the walls are.<br />
-            The work is figuring out what to build inside them — and when to push through.
-          </motion.p>
+
         </div>
       </div>
 
