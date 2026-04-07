@@ -32,11 +32,11 @@ export default function About() {
       >
         <p>
           I started my journey in design in 2021, at 15. Pursuing Computer Science at the time,
-          I was a little skeptical — coding is a very streamlined process. You have a goal, you
+          I was a little skeptical  -  coding is a very streamlined process. You have a goal, you
           have a path; all you have to do is find it.
         </p>
         <p>
-          Entering design was a whole different box of surprises. No set path, no defined goal —
+          Entering design was a whole different box of surprises. No set path, no defined goal  - 
           just me having to carve a direction from nothing. Frustrating at first, coming from a
           background of "do what is asked." But what made me fall further into this rabbit hole was
           the fact that the only limitation to my work was my creativity. (And the client, duh.)
@@ -44,7 +44,7 @@ export default function About() {
         <p>
           Never having experienced that kind of freedom in development, I went all in on design.
           When my academics didn't go the way I planned, I stopped waiting for a classroom and
-          started learning through the work itself — interning early, taking every brief seriously.
+          started learning through the work itself  -  interning early, taking every brief seriously.
         </p>
         <p>
           My case studies shine a light on how I explored a path with no set end and no "right"
