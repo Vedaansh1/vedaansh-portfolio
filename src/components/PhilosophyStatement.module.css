@@ -14,15 +14,16 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
-  padding: 0 60px;
+  padding: 0 var(--page-padding);
 }
 
 .statement {
-  flex-shrink: 0;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .line1 {
-  font-size: clamp(40px, 6vw, 80px);
+  font-size: clamp(40px, 5vw, 68px);
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -0.03em;
@@ -30,7 +31,7 @@
 }
 
 .line2 {
-  font-size: clamp(40px, 6vw, 80px);
+  font-size: clamp(40px, 5vw, 68px);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.0;
@@ -117,7 +118,7 @@
 
 .aboutInner {
   width: 100%;
-  padding: 0 60px;
+  padding: 0 var(--page-padding);
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

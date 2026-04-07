@@ -19,6 +19,7 @@
   --nav-height: 72px;
   --section-padding: 120px;
   --section-padding-mobile: 64px;
+  --page-padding: clamp(60px, 4.17vw, 160px);
 
   /* Transitions */
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
