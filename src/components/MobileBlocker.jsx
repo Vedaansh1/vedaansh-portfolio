@@ -4,8 +4,16 @@ import styles from './MobileBlocker.module.css'
 export default function MobileBlocker() {
   useEffect(() => {
     const isMobile = window.innerWidth <= 768
-    if (isMobile) document.body.style.overflow = 'hidden'
-    return () => { document.body.style.overflow = '' }
+    if (isMobile) {
+      document.body.style.overflow = 'hidden'
+      document.documentElement.style.overflow = 'hidden'
+      document.body.style.overscrollBehavior = 'none'
+    }
+    return () => {
+      document.body.style.overflow = ''
+      document.documentElement.style.overflow = ''
+      document.body.style.overscrollBehavior = ''
+    }
   }, [])
 
   return (
